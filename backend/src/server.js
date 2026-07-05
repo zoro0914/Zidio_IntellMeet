@@ -35,7 +35,7 @@ const io = new Server(httpServer, {
   },
 });
 
-require("./socket/socket")(io);
+require("./socket/Socket")(io);
 
 httpServer.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
