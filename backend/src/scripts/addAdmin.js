@@ -3,8 +3,6 @@ const mongoose = require("mongoose");
 const Admin = require("../models/Admin");
 const connectDB = require("../config/db");
 
-// [EMAIL_ADDRESS= zidioadd@gmail.com]
-// password = zidio@123 ]
 
 const run = async () => {
   const email = process.argv[2];
