@@ -77,7 +77,7 @@ const JoinMeetingModal = ({ open, onClose, prefillId = "" }) => {
 
           <button
             onClick={handleJoin}
-            className="mt-5 w-full bg-violet-650 hover:bg-violet-750 text-white rounded-xl py-3 flex justify-center items-center gap-2"
+            className="mt-5 w-full bg-violet-600 hover:bg-violet-700 text-white rounded-xl py-3 flex justify-center items-center gap-2 font-bold transition-colors cursor-pointer"
           >
             <Video size={20} />
             Join Meeting
