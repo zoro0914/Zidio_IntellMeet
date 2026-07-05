@@ -222,15 +222,8 @@ const Meetings = () => {
 
           <div className="flex gap-3">
             <button
-              onClick={() => setCreateOpen(true)}
-              className="bg-violet-600 hover:bg-violet-750 text-white px-6 py-3 rounded-xl font-semibold shadow-sm transition"
-            >
-              + Create Meeting
-            </button>
-
-            <button
               onClick={() => triggerJoinModal("")}
-              className="border border-violet-200 text-violet-650 hover:bg-violet-50 px-6 py-3 rounded-xl font-semibold transition"
+              className="bg-violet-600 hover:bg-violet-700 text-white px-6 py-3 rounded-xl font-semibold shadow-sm transition cursor-pointer"
             >
               Join Meeting
             </button>
