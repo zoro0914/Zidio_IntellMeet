@@ -4,9 +4,12 @@
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
+
 .scrollbar-none {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Sleek scrollbar styling for Chrome, Safari and Edge */
@@ -14,13 +17,17 @@
   width: 6px;
   height: 6px;
 }
+
 .scrollbar-thin::-webkit-scrollbar-track {
   background: transparent;
 }
+
 .scrollbar-thin::-webkit-scrollbar-thumb {
-  background: rgba(156, 163, 175, 0.25); /* gray-400 with opacity */
+  background: rgba(156, 163, 175, 0.25);
+  /* gray-400 with opacity */
   border-radius: 9999px;
 }
+
 .scrollbar-thin::-webkit-scrollbar-thumb:hover {
   background: rgba(156, 163, 175, 0.5);
 }
