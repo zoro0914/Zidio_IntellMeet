@@ -23,8 +23,14 @@ const io = new Server(httpServer, {
         /^http:\/\/127\.0\.0\.1(:\d+)?$/,
         /^http:\/\/192\.168\.\d+\.\d+(:\d+)?$/,
       ];
-      const isAllowed = allowedPatterns.some((pattern) => pattern.test(origin));
-      if (isAllowed || origin === process.env.CLIENT_URL) {
+      const allowedOrigins = [
+        process.env.CLIENT_URL,
+        process.env.ADMIN_URL,
+      ].filter(Boolean);
+
+      const isAllowed = allowedPatterns.some((pattern) => pattern.test(origin)) ||
+                        allowedOrigins.includes(origin);
+      if (isAllowed) {
         callback(null, true);
       } else {
         callback(new Error("Not allowed by CORS"));
